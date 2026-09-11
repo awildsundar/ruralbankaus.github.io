@@ -1,0 +1,82 @@
+<!--CONTACT PAGE-->
+
+<!--This defines information about the page-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rural Bank Australia - Home Page</title>
+    <!--Imports the Lexend font from Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!--Imports the Open Sans font from Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!--Links the reset, main, and page-specific CSS style sheets-->
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/contact.css">
+</head>
+
+<!--This defines the content of the page-->
+<body>
+    <!--This is the header of the page-->
+    <header class="header">
+    <a href="index.html" class="logo">Rural Banks Australia</a>
+        <div class="display-right">
+            <a href="wip.html">Cards</a>
+            <a href="wip.html">Pricing</a>
+            <a class="active" href="wip.html">Login</a>
+        </div>
+    </header>
+
+    <div class="content">
+        <!--This is the Contact Form section of the page-->
+        <div class="contact-section">
+            <h1>Contact Us</h1>
+            <!--Form currently has no functionality, action parameter will be filled out once
+            servers are set up-->
+            <form>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email..">
+
+                <label for="region">Region</label>
+                <select id="region" name="region">
+                    <option value="melbourne">Melbourne</option>
+                    <option value="loddon-malle">Loddon Malle</option>
+                    <option value="hume">Hume</option>
+                    <option value="gippsland">Gippsland</option>
+                    <option value="barwon-sw">Barwon South West</option>
+                </select>
+
+                <label for="postcode">Postcode</label>
+                <input type="text" id="postcode" name="postcode" placeholder="Your postcode..">
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <!--This is the footer of the page-->
+    <footer class="footer-link">
+        <p>©Rural Banks Australia 2026</p>
+        <a href="index.html">Home</a>
+        <a href="wip.html">Login/Signup</a>
+        <a href="contact.html">Contact Us</a>
+    </footer>
+</body>
+</html>
+
