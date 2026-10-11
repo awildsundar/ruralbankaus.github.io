@@ -43,16 +43,16 @@
             servers are set up-->
             <form>
                 <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <input type="text" id="fname" name="firstname" pattern="[A-Za-z\s]*" placeholder="Your name.." required>
 
                 <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <input type="text" id="lname" name="lastname" pattern="[A-Za-z\s]*" placeholder="Your last name.." required>
 
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Your email..">
+                <input type="email" id="email" name="email" placeholder="Your email.." required>
 
                 <label for="region">Region</label>
-                <select id="region" name="region">
+                <select id="region" name="region" required>
                     <option value="melbourne">Melbourne</option>
                     <option value="loddon-malle">Loddon Malle</option>
                     <option value="hume">Hume</option>
@@ -61,10 +61,10 @@
                 </select>
 
                 <label for="postcode">Postcode</label>
-                <input type="text" id="postcode" name="postcode" placeholder="Your postcode..">
+                <input type="number" id="postcode" name="postcode" placeholder="Your postcode.." required>
 
                 <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
                 <input type="submit" value="Submit">
             </form>
         </div>
